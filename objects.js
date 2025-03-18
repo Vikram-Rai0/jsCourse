@@ -1,13 +1,13 @@
-// const person = {
-//   name : "vikram",
-//   age:23,
-//   greet : function(){
-//     console.log("hello " + this.name);
-//   }
-// }
+const person = {
+  name : "vikram",
+  age:23,
+  greet : function(){
+    console.log("hello my name is  " + this.name);
+  }
+}
 
-// console.log(person);
-// person.greet();
+console.log(person);
+person.greet();
 
 const car = {
   brand: "BMW",
