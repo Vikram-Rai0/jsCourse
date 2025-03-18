@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            border: 2px solid red;
+            height: 7vh;
+            width: 9vw;
+            background: red;
+            color: white;
+            font-size: larger;
+            border-radius: 5px;
+            font-weight: 800;
+            padding: 2
+        }
+    </style>
+</head>
+<script>
+    function gender() {
+        document.getElementById("gen").innerHTML = "female";
+
+    }
+</script>
+
+<body>
+    <p id="gen">gender</p>
+
+    <button onclick="gender()">gender convert</button>
+</body>
+
+</html>
