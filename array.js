@@ -1,5 +1,5 @@
 // let array = ["car", 1, "bus", 2];
-// console.log(array.toString());
+console.log(array.toString());
 
 // let arr = new Array("a", "b", "c");
 // console.log(arr);
@@ -69,8 +69,8 @@ const strShort = number.sort(function (x, y) {
 
 //Numeric short
 
-let num = [40, 100, 1, 5, 25, 1];
-let randomNum = num.sort(() => Math.random() - 0.5);
-let minValue = Math.max(...num);
-console.log(minValue);
+// let num = [40, 100, 1, 5, 25, 1];
+// let randomNum = num.sort(() => Math.random() - 0.5);
+// let minValue = Math.max(...num);
+// console.log(minValue);
 // console.log(randomNum);
