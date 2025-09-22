@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Filter Example</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    input { padding: 8px; width: 300px; margin-bottom: 15px; }
+    ul { list-style: none; padding: 0; }
+    li { padding: 8px; background: #f4f4f4; margin: 5px 0; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h2>Product List</h2>
+  <input type="text" id="searchBox" placeholder="Search products...">
+
+  <ul id="productList"></ul>
+
+  <script>
+    const products = [
+      { id: 1, name: "Apple iPhone 14" },
+      { id: 2, name: "Samsung Galaxy S22" },
+      { id: 3, name: "Google Pixel 7" },
+      { id: 4, name: "OnePlus 10 Pro" },
+      { id: 5, name: "Sony Xperia 5" }
+    ];
+
+    const searchBox = document.getElementById("searchBox");
+    const productList = document.getElementById("productList");
+
+    // Function to display products
+    function displayProducts(items) {
+      productList.innerHTML = "";
+      items.forEach(p => {
+        const li = document.createElement("li");
+        li.textContent = p.name;
+        productList.appendChild(li);
+      });
+    }
+
+    // Initial display
+    displayProducts(products);
+
+    // Search filter
+    searchBox.addEventListener("input", function() {
+      const searchText = this.value.toLowerCase();
+      const filtered = products.filter(p =>
+        p.name.toLowerCase().includes(searchText)
+      );
+      displayProducts(filtered);
+    });
+  </script>
+</body>
+</html>
