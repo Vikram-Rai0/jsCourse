@@ -7,6 +7,7 @@
 // const combine = [...arr1, ...arr2];
 // console.log(combine);
 
+
 // passing array to function
 
 // function sum(x, y, z) {
@@ -28,12 +29,12 @@
 // let num = [1,2,3,4]
 // console.log(sum(...num));
 
-function greetings(greetings, ...intro) {
-    const last  =intro.pop();
-    const joined =intro.length ? intro.join("  ") +" and " +last : last;
-  return `${greetings} ${joined}`;
-}
+// function greetings(greetings, ...intro) {
+//   const last = intro.pop();
+//   const joined = intro.length ? intro.join("  ") + " and " + last : last;
+//   return `${greetings} ${joined}`;
+// }
 
-console.log(
-  greetings("hello", "my parents name are ", "chamana Rai", "mauli dhan rai")
-);
+// console.log(
+//   greetings("hello", "my parents name are ", "chamana Rai", "mauli dhan rai")
+// );
